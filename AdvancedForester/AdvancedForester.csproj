@@ -54,10 +54,14 @@
     <Reference Include="UnityEngine.TextRenderingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Foresters\AutummRedForesterDefinition.cs" />
+    <Compile Include="Foresters\AutummYellowForesterDefinition.cs" />
     <Compile Include="Foresters\TaigaForesterDefinition.cs" />
+    <Compile Include="Foresters\DarkTemperateForesterDefinition.cs" />
+    <Compile Include="Foresters\LightTemperateForesterDefinition.cs" />
     <Compile Include="Foresters\TemperateForesterDefinition.cs" />
     <Compile Include="Foresters\OliveForesterDefinition.cs" />
-    <Compile Include="Foresters\AutummForesterDefinition.cs" />
+    <Compile Include="Foresters\AutummOrangeForesterDefinition.cs" />
     <Compile Include="Foresters\CherryForesterDefinition.cs" />
     <Compile Include="ForesterJob.cs" />
     <Compile Include="ForesterTool.cs" />
