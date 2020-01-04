@@ -125,7 +125,7 @@ namespace AdvancedForester
             NetworkMenuManager.SendServerPopup(player, menu);
         }
 
-        [ModLoader.ModCallback(ModLoader.EModCallbackType.OnPlayerPushedNetworkUIButton, "Khanx.Compass.OnPlayerPushedNetworkUIButton")]
+        [ModLoader.ModCallback(ModLoader.EModCallbackType.OnPlayerPushedNetworkUIButton, "Khanx.AdvancedForester.OnPlayerPushedNetworkUIButton")]
         public static void OnPlayerPushedNetworkUIButton(ButtonPressCallbackData data)
         {
             if (!data.ButtonIdentifier.StartsWith("Khanx.AdvancedForester."))
@@ -148,7 +148,7 @@ namespace AdvancedForester
                 last_forester.Remove(player.ID);
         }
 
-        [ModLoader.ModCallback(ModLoader.EModCallbackType.OnSendAreaHighlights, "Khanx.AdvancedWand.ShowArea")]
+        [ModLoader.ModCallback(ModLoader.EModCallbackType.OnSendAreaHighlights, "Khanx.AdvancedForester.ShowArea")]
         public static void OnSendAreaHighlights(Players.Player player, List<AreaJobTracker.AreaHighlight> list, List<ushort> showWhileHoldingTypes)
         {
             if (null != player)
