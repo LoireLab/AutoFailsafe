@@ -100,23 +100,23 @@ namespace AdvancedForester
 
             menu.LocalStorage.SetAs("header", Localization.GetSentence(player.LastKnownLocale, "popup.tooljob.advancedforesterheader"));
 
-            ButtonCallback cherryButton = new ButtonCallback("Khanx.AdvancedForester.0", new LabelData(Localization.GetSentence(player.LastKnownLocale, "popup.tooljob.cherryforester"), UnityEngine.Color.black, UnityEngine.TextAnchor.MiddleCenter), -1, 25, ButtonCallback.EOnClickActions.ClosePopup);
-            ButtonCallback taigaButton = new ButtonCallback("Khanx.AdvancedForester.1", new LabelData(Localization.GetSentence(player.LastKnownLocale, "popup.tooljob.taigaforester"), UnityEngine.Color.black, UnityEngine.TextAnchor.MiddleCenter), -1, 25, ButtonCallback.EOnClickActions.ClosePopup);
-            ButtonCallback oliveButton = new ButtonCallback("Khanx.AdvancedForester.2", new LabelData(Localization.GetSentence(player.LastKnownLocale, "popup.tooljob.oliveforester"), UnityEngine.Color.black, UnityEngine.TextAnchor.MiddleCenter), -1, 25, ButtonCallback.EOnClickActions.ClosePopup);
+            ButtonCallback cherryButton = new ButtonCallback("Khanx.AdvancedForester.0", new LabelData(Localization.GetSentence(player.LastKnownLocale, "popup.tooljob.cherryforester"), UnityEngine.Color.white, UnityEngine.TextAnchor.MiddleCenter), -1, 25, ButtonCallback.EOnClickActions.ClosePopup);
+            ButtonCallback taigaButton = new ButtonCallback("Khanx.AdvancedForester.1", new LabelData(Localization.GetSentence(player.LastKnownLocale, "popup.tooljob.taigaforester"), UnityEngine.Color.white, UnityEngine.TextAnchor.MiddleCenter), -1, 25, ButtonCallback.EOnClickActions.ClosePopup);
+            ButtonCallback oliveButton = new ButtonCallback("Khanx.AdvancedForester.2", new LabelData(Localization.GetSentence(player.LastKnownLocale, "popup.tooljob.oliveforester"), UnityEngine.Color.white, UnityEngine.TextAnchor.MiddleCenter), -1, 25, ButtonCallback.EOnClickActions.ClosePopup);
 
             HorizontalRow row1 = new HorizontalRow(new List<(IItem, int)> { (cherryButton, 150), (taigaButton, 150), (oliveButton, 150) });
             menu.Items.Add(row1);
             
-            ButtonCallback redAutummButton = new ButtonCallback("Khanx.AdvancedForester.3", new LabelData(Localization.GetSentence(player.LastKnownLocale, "popup.tooljob.autumredforester"), UnityEngine.Color.black, UnityEngine.TextAnchor.MiddleCenter), -1, 25, ButtonCallback.EOnClickActions.ClosePopup);
-            ButtonCallback orangeAutummButton = new ButtonCallback("Khanx.AdvancedForester.4", new LabelData(Localization.GetSentence(player.LastKnownLocale, "popup.tooljob.autummorangeforester"), UnityEngine.Color.black, UnityEngine.TextAnchor.MiddleCenter), -1, 25, ButtonCallback.EOnClickActions.ClosePopup);
-            ButtonCallback yellowAutummButton = new ButtonCallback("Khanx.AdvancedForester.5", new LabelData(Localization.GetSentence(player.LastKnownLocale, "popup.tooljob.autumyellowforester"), UnityEngine.Color.black, UnityEngine.TextAnchor.MiddleCenter), -1, 25, ButtonCallback.EOnClickActions.ClosePopup);
+            ButtonCallback redAutummButton = new ButtonCallback("Khanx.AdvancedForester.3", new LabelData(Localization.GetSentence(player.LastKnownLocale, "popup.tooljob.autumredforester"), UnityEngine.Color.white, UnityEngine.TextAnchor.MiddleCenter), -1, 25, ButtonCallback.EOnClickActions.ClosePopup);
+            ButtonCallback orangeAutummButton = new ButtonCallback("Khanx.AdvancedForester.4", new LabelData(Localization.GetSentence(player.LastKnownLocale, "popup.tooljob.autummorangeforester"), UnityEngine.Color.white, UnityEngine.TextAnchor.MiddleCenter), -1, 25, ButtonCallback.EOnClickActions.ClosePopup);
+            ButtonCallback yellowAutummButton = new ButtonCallback("Khanx.AdvancedForester.5", new LabelData(Localization.GetSentence(player.LastKnownLocale, "popup.tooljob.autumyellowforester"), UnityEngine.Color.white, UnityEngine.TextAnchor.MiddleCenter), -1, 25, ButtonCallback.EOnClickActions.ClosePopup);
 
             HorizontalRow row2 = new HorizontalRow(new List<(IItem, int)> { (redAutummButton, 150), (orangeAutummButton, 150), (yellowAutummButton, 150) });
             menu.Items.Add(row2);
 
-            ButtonCallback darkTemperateButton = new ButtonCallback("Khanx.AdvancedForester.6", new LabelData(Localization.GetSentence(player.LastKnownLocale, "popup.tooljob.darktemperateforester"), UnityEngine.Color.black, UnityEngine.TextAnchor.MiddleCenter), -1, 25, ButtonCallback.EOnClickActions.ClosePopup);
-            ButtonCallback temperateButton = new ButtonCallback("Khanx.AdvancedForester.7", new LabelData(Localization.GetSentence(player.LastKnownLocale, "popup.tooljob.temperateforester"), UnityEngine.Color.black, UnityEngine.TextAnchor.MiddleCenter), -1, 25, ButtonCallback.EOnClickActions.ClosePopup);
-            ButtonCallback lightTemperateButton = new ButtonCallback("Khanx.AdvancedForester.8", new LabelData(Localization.GetSentence(player.LastKnownLocale, "popup.tooljob.lighttemperateforester"), UnityEngine.Color.black, UnityEngine.TextAnchor.MiddleCenter), -1, 25, ButtonCallback.EOnClickActions.ClosePopup);
+            ButtonCallback darkTemperateButton = new ButtonCallback("Khanx.AdvancedForester.6", new LabelData(Localization.GetSentence(player.LastKnownLocale, "popup.tooljob.darktemperateforester"), UnityEngine.Color.white, UnityEngine.TextAnchor.MiddleCenter), -1, 25, ButtonCallback.EOnClickActions.ClosePopup);
+            ButtonCallback temperateButton = new ButtonCallback("Khanx.AdvancedForester.7", new LabelData(Localization.GetSentence(player.LastKnownLocale, "popup.tooljob.temperateforester"), UnityEngine.Color.white, UnityEngine.TextAnchor.MiddleCenter), -1, 25, ButtonCallback.EOnClickActions.ClosePopup);
+            ButtonCallback lightTemperateButton = new ButtonCallback("Khanx.AdvancedForester.8", new LabelData(Localization.GetSentence(player.LastKnownLocale, "popup.tooljob.lighttemperateforester"), UnityEngine.Color.white, UnityEngine.TextAnchor.MiddleCenter), -1, 25, ButtonCallback.EOnClickActions.ClosePopup);
 
             HorizontalRow row3 = new HorizontalRow(new List<(IItem, int)> { (darkTemperateButton, 150), (temperateButton, 150), (lightTemperateButton, 150) });
 
