@@ -34,48 +34,56 @@ namespace AdvancedForester
         {
             int forester = last_forester.GetValueOrDefault(player.ID, 0);
 
-            AreaJobTracker.CommandToolTypeData data = new AreaJobTracker.CommandToolTypeData();
-            
+            NetworkUI.AreaJobs.GenericCommandToolSettings data = new NetworkUI.AreaJobs.GenericCommandToolSettings();
+
             switch(forester)
             {
                 default:
                 case 0:
-                    data.LocaleEntry = "popup.tooljob.cherryforester";
-                    data.AreaType = "Khanx.CherryForester";
+                    data.TranslationKey = "popup.tooljob.cherryforester";
+                    data.Key = "Khanx.CherryForester";
+                    data.NPCTypeKey = "pipliz.forester";
                 break;
                 case 1:
-                    data.LocaleEntry = "popup.tooljob.taigaforester";
-                    data.AreaType = "Khanx.TaigaForester";
+                    data.TranslationKey = "popup.tooljob.taigaforester";
+                    data.Key = "Khanx.TaigaForester";
+                    data.NPCTypeKey = "pipliz.forester";
                     break;
                 case 2:
-                    data.LocaleEntry = "popup.tooljob.oliveforester";
-                    data.AreaType = "Khanx.OliveForester";
+                    data.TranslationKey = "popup.tooljob.oliveforester";
+                    data.Key = "Khanx.OliveForester";
+                    data.NPCTypeKey = "pipliz.forester";
                     break;
                 case 3:
-                    data.LocaleEntry = "popup.tooljob.autumredforester";
-                    data.AreaType = "Khanx.AutummRedForester";
+                    data.TranslationKey = "popup.tooljob.autumredforester";
+                    data.Key = "Khanx.AutummRedForester";
+                    data.NPCTypeKey = "pipliz.forester";
                     break;
                 case 4:
-                    data.LocaleEntry = "popup.tooljob.autummorangeforester";
-                    data.AreaType = "Khanx.AutummOrangeForester";
+                    data.TranslationKey = "popup.tooljob.autummorangeforester";
+                    data.Key = "Khanx.AutummOrangeForester";
+                    data.NPCTypeKey = "pipliz.forester";
                     break;
                 case 5:
-                    data.LocaleEntry = "popup.tooljob.autumyellowforester";
-                    data.AreaType = "Khanx.AutummYellowForester";
+                    data.TranslationKey = "popup.tooljob.autumyellowforester";
+                    data.Key = "Khanx.AutummYellowForester";
+                    data.NPCTypeKey = "pipliz.forester";
                     break;
                 case 6:
-                    data.LocaleEntry = "popup.tooljob.darktemperateforester";
-                    data.AreaType = "Khanx.DarkTemperateForester";
+                    data.TranslationKey = "popup.tooljob.darktemperateforester";
+                    data.Key = "Khanx.DarkTemperateForester";
+                    data.NPCTypeKey = "pipliz.forester";
                     break;
                 case 7:
-                    data.LocaleEntry = "popup.tooljob.temperateforester";
-                    data.AreaType = "Khanx.TemperateForester";
+                    data.TranslationKey = "popup.tooljob.temperateforester";
+                    data.Key = "Khanx.TemperateForester";
+                    data.NPCTypeKey = "pipliz.forester";
                     break;
                 case 8:
-                    data.LocaleEntry = "popup.tooljob.lighttemperateforester";
-                    data.AreaType = "Khanx.LightTemperateForester";
+                    data.TranslationKey = "popup.tooljob.lighttemperateforester";
+                    data.Key = "Khanx.LightTemperateForester";
+                    data.NPCTypeKey = "pipliz.forester";
                     break;
-
             }
 
             data.Minimum3DBlockCount = 36;

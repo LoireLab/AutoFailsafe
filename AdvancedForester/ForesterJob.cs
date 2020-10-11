@@ -172,7 +172,7 @@ namespace AdvancedForester
 
                     NPC.Inventory.Add(GatherResults);
                     GatheredItemsCount++;
-                    if (GatheredItemsCount >= definition.MaxGathersPerRun)
+                    if (GatheredItemsCount >= Definition.MaxGathersPerRun)
                     {
                         shouldDumpInventory = true;
                         GatheredItemsCount = 0;
