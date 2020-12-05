@@ -55,6 +55,7 @@
     <Reference Include="UnityEngine.TextRenderingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ForesterInterface.cs" />
     <Compile Include="Foresters\AutummRedForesterDefinition.cs" />
     <Compile Include="Foresters\AutummYellowForesterDefinition.cs" />
     <Compile Include="Foresters\TaigaForesterDefinition.cs" />
@@ -65,7 +66,6 @@
     <Compile Include="Foresters\AutummOrangeForesterDefinition.cs" />
     <Compile Include="Foresters\CherryForesterDefinition.cs" />
     <Compile Include="ForesterJob.cs" />
-    <Compile Include="ForesterTool.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
