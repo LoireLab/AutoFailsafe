@@ -56,13 +56,8 @@ namespace AdvancedForester
             if (!menuName.Equals(CommandToolManager.Menus.MAIN_MENU))
                 return;
 
-            networkMenu.Items.Clear();
-
-            CommandToolManager.GenerateThreeColumnCenteredRow(networkMenu, CommandToolManager.GetButtonMenu(player, "popup.tooljob.food", "popup.tooljob.food"), CommandToolManager.GetButtonMenu(player, "popup.tooljob.guard", "popup.tooljob.guard"), CommandToolManager.GetButtonTool(player, "minerjob", "popup.tooljob.miner"));
-            networkMenu.Items.Add(new EmptySpace(10));
-            CommandToolManager.GenerateThreeColumnCenteredRow(networkMenu, CommandToolManager.GetButtonMenu(player, "Khanx.AdvancedForester", "popup.tooljob.advancedforester"), CommandToolManager.GetButtonMenu(player, "popup.tooljob.flaxherbfarming", "popup.tooljob.flaxherbfarming"), CommandToolManager.GetButtonMenu(player, "popup.tooljob.construction", "popup.tooljob.construction"));
-            networkMenu.Items.Add(new EmptySpace(10));
-            CommandToolManager.GenerateThreeColumnCenteredRow(networkMenu, CommandToolManager.GetButtonMenu(player, "popup.tooljob.fareast", "popup.tooljob.fareast", CommandToolManager.IsInScienceBiome(player, "sciencebiome.fareast")), CommandToolManager.GetButtonMenu(player, "popup.tooljob.newworld", "popup.tooljob.newworld", CommandToolManager.IsInScienceBiome(player, "sciencebiome.newworld")), CommandToolManager.GetButtonMenu(player, "popup.tooljob.tropics", "popup.tooljob.tropics", CommandToolManager.IsInScienceBiome(player, "sciencebiome.tropics")));
+            HorizontalRow horizontalRow = (HorizontalRow)networkMenu.Items[4];
+            horizontalRow.Items[1] = (CommandToolManager.GetButtonMenu(player, "Khanx.AdvancedForester", "popup.tooljob.advancedforester"), horizontalRow.Items[1].Item2);
         }
 
         public void OnPlayerPushedNetworkUIButton(ButtonPressCallbackData data)
