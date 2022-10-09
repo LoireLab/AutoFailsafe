@@ -1,4 +1,5 @@
 ﻿using Jobs;
+using Newtonsoft.Json.Linq;
 using NPC;
 using Pipliz;
 
@@ -9,18 +10,20 @@ namespace AdvancedForester
     {
         public OliveForesterDefinition()
         {
+            AllowGoalOffset = true;
             Identifier = "Khanx.OliveForester";
             UsedNPCType = NPCType.GetByKeyNameOrDefault("pipliz.forester");
-            MaxGathersPerRun = 1;
-            Stages = new ushort[] {
-                ItemTypes.IndexLookup.GetIndex("sappling"),
-                ItemTypes.IndexLookup.GetIndex("logtemperate")
-            };
+            Stages = new ushort[0];
         }
 
-        public override IAreaJob CreateAreaJob(Colony owner, Vector3Int min, Vector3Int max, bool isLoaded, int npcID = 0)
+        public override IAreaJob CreateAreaJob(Colony owner, Vector3Int min, Vector3Int max)
         {
-            return new ForesterJob(this, owner, min, max, ItemTypes.GetType("olivesapling"), npcID);
+            return new ForesterJob(this, owner, min, max, ItemTypes.GetType("Khanx.AdvancedForester.olivesapling"));
+        }
+
+        public override IAreaJob LoadAreaJob(Colony owner, Vector3Int min, Vector3Int max, NPCID? npcID, JObject miscData)
+        {
+            return new ForesterJob(this, owner, min, max, ItemTypes.GetType("Khanx.AdvancedForester.olivesapling"), npcID);
         }
     }
 }

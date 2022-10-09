@@ -14,41 +14,41 @@ namespace AdvancedForester
 
             CommandToolManager.MenuTooltips.Add("Khanx.CherryForest", ("popup.tooljob.cherryforestera", "popup.tooljob.cherryforesterb"));
             CommandToolManager.AreaDescriptions.Add("Khanx.CherryForest",
-                AreaToolDescriptionSettings.NewForest("Cherry Forester", "Khanx.CherryForester", "pipliz.forester"));
+                AreaToolDescriptionSettings.NewForest("Cherry Forester", "Khanx.CherryForester", "pipliz.forester", ItemTypes.EFertileState.Normal));
 
             CommandToolManager.MenuTooltips.Add("Khanx.TaigaForest", ("popup.tooljob.taigaforestera", "popup.tooljob.taigaforesterb"));
             CommandToolManager.AreaDescriptions.Add("Khanx.TaigaForest",
-                AreaToolDescriptionSettings.NewForest("Taiga Forester", "Khanx.TaigaForester", "pipliz.forester"));
+                AreaToolDescriptionSettings.NewForest("Taiga Forester", "Khanx.TaigaForester", "pipliz.forester", ItemTypes.EFertileState.Normal));
 
             CommandToolManager.MenuTooltips.Add("Khanx.OliveForest", ("popup.tooljob.oliveforestera", "popup.tooljob.oliveforesterb"));
             CommandToolManager.AreaDescriptions.Add("Khanx.OliveForest",
-                AreaToolDescriptionSettings.NewForest("Olive Forester", "Khanx.OliveForester", "pipliz.forester"));
+                AreaToolDescriptionSettings.NewForest("Olive Forester", "Khanx.OliveForester", "pipliz.forester", ItemTypes.EFertileState.Normal));
 
 
             CommandToolManager.MenuTooltips.Add("Khanx.AutummRedForester", ("popup.tooljob.autumredforestera", "popup.tooljob.autumredforesterb"));
             CommandToolManager.AreaDescriptions.Add("Khanx.AutummRedForester",
-                AreaToolDescriptionSettings.NewForest("popup.tooljob.autumredforester", "Khanx.AutummRedForester", "pipliz.forester"));
+                AreaToolDescriptionSettings.NewForest("popup.tooljob.autumredforester", "Khanx.AutummRedForester", "pipliz.forester", ItemTypes.EFertileState.Normal));
 
             CommandToolManager.MenuTooltips.Add("Khanx.AutummOrangeForester", ("popup.tooljob.autummorangeforestera", "popup.tooljob.autummorangeforesterb"));
             CommandToolManager.AreaDescriptions.Add("Khanx.AutummOrangeForester",
-                AreaToolDescriptionSettings.NewForest("popup.tooljob.autummorangeforester", "Khanx.AutummOrangeForester", "pipliz.forester"));
+                AreaToolDescriptionSettings.NewForest("popup.tooljob.autummorangeforester", "Khanx.AutummOrangeForester", "pipliz.forester", ItemTypes.EFertileState.Normal));
 
             CommandToolManager.MenuTooltips.Add("Khanx.AutummYellowForester", ("popup.tooljob.autumyellowforestera", "popup.tooljob.autumyellowforesterb"));
             CommandToolManager.AreaDescriptions.Add("Khanx.AutummYellowForester",
-                AreaToolDescriptionSettings.NewForest("popup.tooljob.autumyellowforester", "Khanx.AutummYellowForester", "pipliz.forester"));
+                AreaToolDescriptionSettings.NewForest("popup.tooljob.autumyellowforester", "Khanx.AutummYellowForester", "pipliz.forester", ItemTypes.EFertileState.Normal));
 
 
             CommandToolManager.MenuTooltips.Add("Khanx.DarkTemperateForester", ("popup.tooljob.darktemperateforestera", "popup.tooljob.darktemperateforesterb"));
             CommandToolManager.AreaDescriptions.Add("Khanx.DarkTemperateForester",
-                AreaToolDescriptionSettings.NewForest("popup.tooljob.darktemperateforester", "Khanx.DarkTemperateForester", "pipliz.forester"));
+                AreaToolDescriptionSettings.NewForest("popup.tooljob.darktemperateforester", "Khanx.DarkTemperateForester", "pipliz.forester", ItemTypes.EFertileState.Normal));
 
             CommandToolManager.MenuTooltips.Add("Khanx.TemperateForester", ("popup.tooljob.temperateforestera", "popup.tooljob.temperateforestera"));
             CommandToolManager.AreaDescriptions.Add("Khanx.TemperateForester",
-                AreaToolDescriptionSettings.NewForest("popup.tooljob.temperateforester", "Khanx.TemperateForester", "pipliz.forester"));
+                AreaToolDescriptionSettings.NewForest("popup.tooljob.temperateforester", "Khanx.TemperateForester", "pipliz.forester", ItemTypes.EFertileState.Normal));
 
             CommandToolManager.MenuTooltips.Add("Khanx.LightTemperateForester", ("popup.tooljob.lighttemperateforestera", "popup.tooljob.lighttemperateforesterb"));
             CommandToolManager.AreaDescriptions.Add("Khanx.LightTemperateForester",
-                AreaToolDescriptionSettings.NewForest("popup.tooljob.lighttemperateforester", "Khanx.LightTemperateForester", "pipliz.forester"));
+                AreaToolDescriptionSettings.NewForest("popup.tooljob.lighttemperateforester", "Khanx.LightTemperateForester", "pipliz.forester", ItemTypes.EFertileState.Normal));
         }
 
         public void OnConstructCommandTool(Players.Player player, NetworkMenu networkMenu, string menuName)
