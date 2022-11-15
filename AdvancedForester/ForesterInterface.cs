@@ -62,26 +62,21 @@ namespace AdvancedForester
 
         public void OnPlayerPushedNetworkUIButton(ButtonPressCallbackData data)
         {
-            if (!CommandToolManager.TryStartCommandToolSelection(data.Player, data.ButtonIdentifier))
+            if (data.ButtonIdentifier.Equals("Khanx.AdvancedForester"))
             {
-                switch (data.ButtonIdentifier)
-                {
-                    case "Khanx.AdvancedForester":
-                        NetworkMenu networkMenu = CommandToolManager.GenerateMenuBase(data.Player, showBackButton: true);
-                        CommandToolManager.GenerateThreeColumnCenteredRow(networkMenu, new EmptySpace(), CommandToolManager.GetButtonTool(data.Player, "pipliz.temperateforest", "popup.tooljob.forester", 200), new EmptySpace());
-                        networkMenu.Items.Add(new EmptySpace(10));
-                        
-                        CommandToolManager.GenerateThreeColumnCenteredRow(networkMenu, CommandToolManager.GetButtonTool(data.Player, "Khanx.CherryForest", "popup.tooljob.cherryforester", 200), CommandToolManager.GetButtonTool(data.Player, "Khanx.TaigaForest", "popup.tooljob.taigaforester", 200), CommandToolManager.GetButtonTool(data.Player, "Khanx.OliveForest", "popup.tooljob.oliveforester", 200));
-                        networkMenu.Items.Add(new EmptySpace(10));
+                NetworkMenu networkMenu = CommandToolManager.GenerateMenuBase(data.Player, showBackButton: true);
+                CommandToolManager.GenerateThreeColumnCenteredRow(networkMenu, new EmptySpace(), CommandToolManager.GetButtonTool(data.Player, "pipliz.temperateforest", "popup.tooljob.forester", 200), new EmptySpace());
+                networkMenu.Items.Add(new EmptySpace(10));
 
-                        CommandToolManager.GenerateThreeColumnCenteredRow(networkMenu, CommandToolManager.GetButtonTool(data.Player, "Khanx.AutummRedForester", "popup.tooljob.autumredforester", 200), CommandToolManager.GetButtonTool(data.Player, "Khanx.AutummOrangeForester", "popup.tooljob.autummorangeforester", 200), CommandToolManager.GetButtonTool(data.Player, "Khanx.AutummYellowForester", "popup.tooljob.autumyellowforester", 200));
-                        networkMenu.Items.Add(new EmptySpace(10));
+                CommandToolManager.GenerateThreeColumnCenteredRow(networkMenu, CommandToolManager.GetButtonTool(data.Player, "Khanx.CherryForest", "popup.tooljob.cherryforester", 200), CommandToolManager.GetButtonTool(data.Player, "Khanx.TaigaForest", "popup.tooljob.taigaforester", 200), CommandToolManager.GetButtonTool(data.Player, "Khanx.OliveForest", "popup.tooljob.oliveforester", 200));
+                networkMenu.Items.Add(new EmptySpace(10));
 
-                        CommandToolManager.GenerateThreeColumnCenteredRow(networkMenu, CommandToolManager.GetButtonTool(data.Player, "Khanx.DarkTemperateForester", "popup.tooljob.darktemperateforester", 200), CommandToolManager.GetButtonTool(data.Player, "Khanx.TemperateForester", "popup.tooljob.temperateforester", 200), CommandToolManager.GetButtonTool(data.Player, "Khanx.LightTemperateForester", "popup.tooljob.lighttemperateforester", 200));
+                CommandToolManager.GenerateThreeColumnCenteredRow(networkMenu, CommandToolManager.GetButtonTool(data.Player, "Khanx.AutummRedForester", "popup.tooljob.autumredforester", 200), CommandToolManager.GetButtonTool(data.Player, "Khanx.AutummOrangeForester", "popup.tooljob.autummorangeforester", 200), CommandToolManager.GetButtonTool(data.Player, "Khanx.AutummYellowForester", "popup.tooljob.autumyellowforester", 200));
+                networkMenu.Items.Add(new EmptySpace(10));
 
-                        NetworkMenuManager.SendServerPopup(data.Player, networkMenu);
-                        break;
-                }
+                CommandToolManager.GenerateThreeColumnCenteredRow(networkMenu, CommandToolManager.GetButtonTool(data.Player, "Khanx.DarkTemperateForester", "popup.tooljob.darktemperateforester", 200), CommandToolManager.GetButtonTool(data.Player, "Khanx.TemperateForester", "popup.tooljob.temperateforester", 200), CommandToolManager.GetButtonTool(data.Player, "Khanx.LightTemperateForester", "popup.tooljob.lighttemperateforester", 200));
+
+                NetworkMenuManager.SendServerPopup(data.Player, networkMenu);
             }
         }
     }
