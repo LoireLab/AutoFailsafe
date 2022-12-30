@@ -244,7 +244,7 @@ namespace AdvancedForester
 				{
 					if ((RequiredFertility & typeBelow.BlockFertility) == RequiredFertility)
 					{
-						ServerManager.TryChangeBlock(treeLocation, BuiltinBlocks.Types.air, BuiltinBlocks.Types.sapling, Owner, ESetBlockFlags.DefaultAudio);
+						ServerManager.TryChangeBlock(treeLocation, BuiltinBlocks.Types.air, saplingTree, Owner, ESetBlockFlags.DefaultAudio);
 						state.SetCooldown(1.5, 2.5);
 						return;
 					}
