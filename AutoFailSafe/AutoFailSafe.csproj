@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>net472</TargetFramework>
+  </PropertyGroup>
+<ItemGroup>
+  <Reference Include="Assembly-CSharp">
+    <HintPath>C:\Program Files (x86)\Steam\steamapps\common\Colony Survival\colonyserver_Data\Managed\Assembly-CSharp.dll</HintPath>
+    <Private>false</Private> <!-- Это предотвращает копирование файла в выходную папку -->
+  </Reference>
+</ItemGroup>
+<ItemGroup>
+  <Reference Include="Assembly-CSharp">
+    <HintPath>C:\Program Files (x86)\Steam\steamapps\common\Colony Survival\colonyserver_Data\Managed\Assembly-CSharp.dll</HintPath>
+    <Private>false</Private> <!-- Это предотвращает копирование файла в выходную папку -->
+  </Reference>
+</ItemGroup>
+</Project>
